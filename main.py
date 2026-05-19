@@ -8,7 +8,7 @@ import cloudinary.uploader
 cloudinary.config(
     cloud_name=st.secrets["CLOUD_NAME"],
     api_key=st.secrets["API_KEY"],
-    api_secret=st.secrets["API_SECRET"]
+    api_secret =st.secrets["API_SECRET"]
 )
 
 # ---------------- SESSION ----------------
@@ -107,12 +107,6 @@ def dashboard():
             st.write(
                 "File Type:",
                 uploaded_file.type
-            )
-
-            st.write(
-                "File Size:",
-                uploaded_file.size,
-                "bytes"
             )
 
             # PDF
